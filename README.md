@@ -1,6 +1,6 @@
-# 🎉 Website Ucapan Selamat Ulang Tahun untuk Davina Putri Kusuma
+# 🎉 Website Ucapan Selamat Ulang Tahun 
 
-Website interaktif dan penuh kejutan untuk merayakan ulang tahun ke-21 Davina Putri Kusuma yang jatuh pada tanggal 24 Agustus 2004.
+Website interaktif dan penuh kejutan untuk merayakan ulang tahun
 
 ## ✨ Fitur-Fitur Menarik
 
@@ -47,9 +47,9 @@ Website interaktif dan penuh kejutan untuk merayakan ulang tahun ke-21 Davina Pu
    # Clone ke local atau upload files
    git init
    git add .
-   git commit -m "Initial commit - Davina Birthday Website"
+   git commit -m "Initial commit - Birthday Website"
    git branch -M main
-   git remote add origin https://github.com/USERNAME/davina-birthday.git
+   git remote add origin https://github.com/USERNAME/birthday.git
    git push -u origin main
    ```
 
@@ -86,7 +86,7 @@ Website interaktif dan penuh kejutan untuk merayakan ulang tahun ke-21 Davina Pu
    - Set up and deploy? Y
    - Which scope? (pilih account Anda)
    - Link to existing project? N
-   - What's your project's name? davina-birthday
+   - What's your project's name? birthday
    - In which directory is your code located? ./
 
 ### Metode 3: Drag & Drop Deploy
@@ -113,7 +113,7 @@ ultah2/
 
 1. **Loading Screen:** Website akan loading selama 3 detik dengan animasi
 2. **Start Celebration:** Klik tombol untuk memulai perayaan
-3. **Age Counter:** Lihat usia real-time Davina
+3. **Age Counter:** Lihat usia real-time 
 4. **Memory Gallery:** Klik setiap kartu untuk melihat kenangan
 5. **Love Letter:** Klik amplop untuk membaca surat cinta
 6. **Blow Candles:** Klik setiap lilin di kue untuk meniupnya
@@ -126,7 +126,7 @@ ultah2/
 
 Edit file `index.html` dan `script.js`:
 
-- Ganti "Davina Putri Kusuma" dengan nama yang diinginkan
+- Ganti dengan nama yang diinginkan
 - Ganti tanggal "2004-08-24" di JavaScript
 - Update umur di HTML jika diperlukan
 
@@ -180,9 +180,9 @@ Setiap klik dan hover memberikan feedback visual yang menarik.
 
 Berbagai efek partikel seperti confetti, sparkles, dan hearts.
 
-## 💝 Pesan untuk Davina
+## 💝 Pesan  
 
-Website ini dibuat dengan penuh cinta untuk Davina Putri Kusuma. Semoga hari ulang tahunnya yang ke-21 dipenuhi kebahagiaan, kesehatan, dan kesuksesan. Selamat ulang tahun, Davina! 🎉👑
+Website ini dibuat dengan penuh cinta. Semoga hari ulang tahunnya yang ke-21 dipenuhi kebahagiaan, kesehatan, dan kesuksesan. Selamat ulang tahun! 🎉👑
 
 ## 🚀 Live Demo
 
@@ -194,6 +194,3 @@ Setelah deploy, website akan dapat diakses di:
 Jika ada masalah atau pertanyaan, silakan buat issue di repository GitHub atau hubungi developer.
 
 ---
-
-**Dibuat dengan 💕 untuk Davina Putri Kusuma**
-_Happy 21st Birthday! 🎂✨_
