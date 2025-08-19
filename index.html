@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Davina Putri Kusuma! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="gift-box">
+                <div class="gift-lid">🎁</div>
+            </div>
+            <p>Menyiapkan kejutan untuk Davina...</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display: none;">
+        <!-- Background Elements -->
+        <div class="balloons-container">
+            <div class="balloon balloon-1"></div>
+            <div class="balloon balloon-2"></div>
+            <div class="balloon balloon-3"></div>
+            <div class="balloon balloon-4"></div>
+            <div class="balloon balloon-5"></div>
+        </div>
+
+        <div class="confetti-container"></div>
+        
+        <!-- Hearts Animation -->
+        <div class="hearts-container"></div>
+
+        <!-- Sparkles -->
+        <div class="sparkles-container"></div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="main-title">
+                    <span class="letter">H</span>
+                    <span class="letter">a</span>
+                    <span class="letter">p</span>
+                    <span class="letter">p</span>
+                    <span class="letter">y</span>
+                    <span class="space"> </span>
+                    <span class="letter">2</span>
+                    <span class="letter">1</span>
+                    <span class="letter">s</span>
+                    <span class="letter">t</span>
+                    <span class="space"> </span>
+                    <span class="letter">B</span>
+                    <span class="letter">i</span>
+                    <span class="letter">r</span>
+                    <span class="letter">t</span>
+                    <span class="letter">h</span>
+                    <span class="letter">d</span>
+                    <span class="letter">a</span>
+                    <span class="letter">y</span>
+                </h1>
+                <div class="name-container">
+                    <h2 class="name">Davina Putri Kusuma</h2>
+                    <div class="crown">👑</div>
+                </div>
+                <p class="birth-date">24 Agustus 2004 ✨</p>
+                <button class="start-celebration-btn" onclick="startCelebration()">
+                    🎉 Mulai Perayaan! 🎉
+                </button>
+            </div>
+        </section>
+
+        <!-- Age Counter -->
+        <section class="age-section">
+            <div class="container">
+                <h3>Usia Sekarang</h3>
+                <div class="age-counter">
+                    <div class="age-item">
+                        <span id="years">21</span>
+                        <label>Tahun</label>
+                    </div>
+                    <div class="age-item">
+                        <span id="days">0</span>
+                        <label>Hari</label>
+                    </div>
+                    <div class="age-item">
+                        <span id="hours">0</span>
+                        <label>Jam</label>
+                    </div>
+                    <div class="age-item">
+                        <span id="minutes">0</span>
+                        <label>Menit</label>
+                    </div>
+                    <div class="age-item">
+                        <span id="seconds">0</span>
+                        <label>Detik</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Gallery -->
+        <section class="memory-gallery">
+            <div class="container">
+                <h3>Galeri Kenangan 💕</h3>
+                <div class="gallery-grid">
+                    <div class="memory-card" onclick="openMemoryModal(1)">
+                        <div class="memory-image">📸</div>
+                        <p>Kenangan Pertama</p>
+                    </div>
+                    <div class="memory-card" onclick="openMemoryModal(2)">
+                        <div class="memory-image">🌟</div>
+                        <p>Momen Spesial</p>
+                    </div>
+                    <div class="memory-card" onclick="openMemoryModal(3)">
+                        <div class="memory-image">💝</div>
+                        <p>Hadiah Terindah</p>
+                    </div>
+                    <div class="memory-card" onclick="openMemoryModal(4)">
+                        <div class="memory-image">🌹</div>
+                        <p>Hari Romantis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Love Letters -->
+        <section class="love-letters">
+            <div class="container">
+                <h3>Surat Cinta Untukmu 💌</h3>
+                <div class="letter-container">
+                    <div class="letter" onclick="openLetter()">
+                        <div class="envelope">
+                            <div class="envelope-top"></div>
+                            <div class="envelope-body">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                        </div>
+                        <p>Klik untuk membuka surat</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Virtual Cake -->
+        <section class="cake-section">
+            <div class="container">
+                <h3>Tiup Lilinnya! 🕯️</h3>
+                <div class="cake-container">
+                    <div class="cake">
+                        <div class="candle candle-1" onclick="blowCandle(1)">🕯️</div>
+                        <div class="candle candle-2" onclick="blowCandle(2)">🕯️</div>
+                        <div class="candle candle-3" onclick="blowCandle(3)">🕯️</div>
+                        <div class="cake-layer layer-1">🎂</div>
+                        <div class="cake-layer layer-2">🍰</div>
+                    </div>
+                    <p class="cake-instruction">Klik setiap lilin untuk meniupnya!</p>
+                    <div id="wish-message" class="wish-message" style="display: none;">
+                        <p>🌟 Semoga semua impianmu terwujud! 🌟</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wishes Collection -->
+        <section class="wishes-section">
+            <div class="container">
+                <h3>Harapan & Doa 🙏</h3>
+                <div class="wishes-container">
+                    <div class="wish-card" onclick="showWish(1)">
+                        <i class="fas fa-star"></i>
+                        <p>Kebahagiaan</p>
+                    </div>
+                    <div class="wish-card" onclick="showWish(2)">
+                        <i class="fas fa-heart"></i>
+                        <p>Kesehatan</p>
+                    </div>
+                    <div class="wish-card" onclick="showWish(3)">
+                        <i class="fas fa-graduation-cap"></i>
+                        <p>Kesuksesan</p>
+                    </div>
+                    <div class="wish-card" onclick="showWish(4)">
+                        <i class="fas fa-rainbow"></i>
+                        <p>Impian</p>
+                    </div>
+                </div>
+                <div id="wish-display" class="wish-display"></div>
+            </div>
+        </section>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <button id="music-toggle" onclick="toggleMusic()">
+                <i class="fas fa-music"></i>
+            </button>
+            <audio id="birthday-song" loop>
+                <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>Dibuat dengan 💕 khusus untuk Davina Putri Kusuma</p>
+                <p>Selamat ulang tahun yang ke-21! Semoga hari ini dan tahun-tahun ke depan dipenuhi kebahagiaan! 🎊</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modals -->
+    <div id="memory-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <div id="letter-modal" class="modal">
+        <div class="modal-content letter-content">
+            <span class="close" onclick="closeLetterModal()">&times;</span>
+            <div class="letter-paper">
+                <h4>Untuk Davina Tersayang 💕</h4>
+                <div class="letter-text">
+                    <p>Selamat ulang tahun yang ke-21, sayangku! 🎉</p>
+                    <br>
+                    <p>Hari ini adalah hari yang sangat istimewa karena 21 tahun yang lalu, dunia menjadi lebih indah dengan kehadiranmu. Davina Putri Kusuma, namamu seindah orangnya, dan aku sangat beruntung bisa mengenalmu.</p>
+                    <br>
+                    <p>Di usia yang ke-21 ini, semoga semua impian dan cita-citamu terwujud. Semoga kebahagiaan selalu menyertaimu, kesehatan selalu terjaga, dan kesuksesan selalu menemanimu di setiap langkah.</p>
+                    <br>
+                    <p>Terima kasih telah menjadi bagian terpenting dalam hidupku. Terima kasih untuk setiap senyuman, tawa, dan momen indah yang kita bagi bersama.</p>
+                    <br>
+                    <p>Happy 21st Birthday, Princess! 👑✨</p>
+                    <br>
+                    <div class="signature">
+                        <p>Dengan cinta,</p>
+                        <p>Orang yang sangat menyayangimu ❤️</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
